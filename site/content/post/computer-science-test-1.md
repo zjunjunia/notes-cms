@@ -52,10 +52,10 @@ Number Representation
   0     0    0
 
 -   E.g. A5 in Denary =
-    $\left( 16 \times 10 \right) + \left( 1 \times 5 \right) = 165$
+    $$\left( 16 \times 10 \right) + \left( 1 \times 5 \right) = 165$$
 
 -   E.g. 65 in Hexadecimal =
-    $65 \div 16 = 4\ Remainder\ 1\therefore\  = 41$ H
+    $$65 \div 16 = 4\ Remainder\ 1\therefore\  = 41$$ H
 
 -   Quick way of translating hexadecimal to binary is by converting the
     hexadecimal to BCD
