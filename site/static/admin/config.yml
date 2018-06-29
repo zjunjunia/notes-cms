@@ -15,6 +15,26 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Intro Blurb", name: "description", widget: "text"}
       - {label: "Image", name: "image", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
+      
+      
+  - name: "notes" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Notes" # Used in the UI, ie.: "New Post"
+    folder: "site/content/notes" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: "Exam Board", name: "board", widget: "string"}
+      - {label: "Level", name: "level", widget: "string"}
+      - {label: "Subject", name: "subject", widget: "string"}
+      - {label: "Module", name: "module", widget: "string"}
+      - {label: "Syllabus Code", name: "code", widget: "string"}
+      - {label: "Syllabus Year", name: "year", widget: "string"}      
+      - label: "Chapter"
+         name: "chapters"
+         widget: "list"
+         fields:
+           - {label: Chapter Name, name: chapter_name, widget: string}
+           - {label: Content, name: content, widget: markdown} 
+      
   - name: "pages"
     label: "Pages"
     files:
