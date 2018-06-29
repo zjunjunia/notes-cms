@@ -29,11 +29,11 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Syllabus Code", name: "code", widget: "string"}
       - {label: "Syllabus Year", name: "year", widget: "string"}      
       - label: "Chapter"
-         name: "chapters"
-         widget: "list"
-         fields:
-           - {label: Chapter Name, name: chapter_name, widget: string}
-           - {label: Content, name: content, widget: markdown} 
+        name: "chapters"
+        widget: "list"
+        fields:
+          - {label: Chapter Name, name: chapter_name, widget: string}
+          - {label: Content, name: content, widget: markdown} 
       
   - name: "pages"
     label: "Pages"
